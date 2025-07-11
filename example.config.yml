@@ -1,0 +1,13 @@
+broker:
+  host: "127.0.0.1" 
+  port: 1883 
+  username: "user"   
+  password: "s3cr3t"  
+  topic: "hello"
+
+hook:  
+  host: "https://your-fancy-domain.de?token="   
+  #GET / POST
+  method: "GET"  
+  #Only Works with POST 
+  #payload: '{"msg":"hello"}'  

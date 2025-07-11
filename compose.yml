@@ -1,0 +1,6 @@
+services:
+  mqtthook:
+    image: mqtthook
+    volumes:
+      ./config.yml:/app/config.yml
+    restart: always
