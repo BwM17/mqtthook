@@ -1,4 +1,4 @@
-<h1><div><img alt="logo" src="./images/MQTTHook.svg" style="width: 60px; height: 60px;">MQTThook<div></h1>
+<h1><div><img alt="logo" src="./images/logo.svg" style="width: 60px; height: 60px;">MQTThook<div></h1>
 is a simple Program that converts mqtt requests to Webhooks requests that <br>
 are then used as a Trigger in another programm
 
