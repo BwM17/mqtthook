@@ -34,6 +34,8 @@ func postRequest(path string) (err error) {
 		return errors.New(fmt.Sprintf("Server responded with status code %v", res.StatusCode))
 	}
 
+	log.Printf("%v: success", res.Request.URL)
+
 	_, err = io.Copy(io.Discard, res.Body)
 	if err != nil {
 		return err
@@ -59,6 +61,8 @@ func getRequest(path string) (err error) {
 	if res.StatusCode != 200 {
 		return errors.New(fmt.Sprintf("Server responded with status code %v", res.StatusCode))
 	}
+
+	log.Printf("%v: Success", res.Request.URL)
 
 	_, err = io.Copy(io.Discard, res.Body)
 	if err != nil {
